@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import "@/styles/globals.css";
+import { ChildType } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Next + StyleX",
-  description: "Starter project for Next.js + StyleX",
+  title: "Rakit Hub",
+  description: "Your hub to build a dream computer.",
 };
 
-interface Props {
-  children: React.ReactNode;
-}
-
-const RootLayout = ({ children }: Readonly<Props>) => (
+const RootLayout = ({ children }: ChildType) => (
   <html lang="en">
     <body>{children}</body>
   </html>
